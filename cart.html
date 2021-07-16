@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Medkart|online-pharmacy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/34119cb70f.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/34119cb70f.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8dd67f831c.js" crossorigin="anonymous"></script>
+<style>
+
+
+
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+..container11 {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-.container11 {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btnnc {
+  display: inline-flex;
+  justify-content: safe center;
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  align-content: center;
+}
+
+.btnnc:hover {
+  background-color: #45a049;
+}
+
+/*a {
+  color: #2196F3;
+}*/
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+.checkout{
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.loc{
+  float: left;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+
+}
+.loccc{
+  background-color: lightcoral;
+  color: green;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 100px;
+  float: left;
+  /*padding-left: 100px;*/
+
+}
+.loccc:hover{
+  background-color: white;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row11 {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.aaa{
+	display: inline-flex;
+	width: 70%;
+	justify-content: center;
+	align-content: center;
+}
+</style>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="header">
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/logo.png" width="130px">
+	</div>
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="allmed.html">Allmeds</a></li>
+			<li><a href="covid.html">Covid-Care</a></li>
+			<!-- <li><a href="delivery.html">Delivery</a></li> -->
+			<li><a href="account.html">Account</a></li>
+		</ul>
+	</nav>
+	<a href="cart.html" images/cart.png><img src="images/cart.png" width="50px" height="50px" ></a><br><h1>Cart<br><span>0</span></h1>
+	<img src="images/menu.png" class="menu-icon" onclick="menutoggle()"> 
+	</div>
+	<div class="row">
+		<div class="col-2">
+			<h1>Your CART </h1>
+			
+			<a href="#pay" class="btnc">BUY &#10003</a>
+		</div>
+		<div class="col-2">
+			<img src="images/carrt.png">
+			
+		</div>
+	</div>
+</div>
+</div>
+<h1 class="title">Product Detials</h1>
+<div class="product-header1">
+	<h5 class="product-title">Product</h5>
+	<h5 class="price">Price</h5>
+	<h5 class="quantity">Quantity</h5>
+	<h5 class="total1">Total</h5>
+	</div>
+
+<div class="product-container">
+
+
+
+
+	
+	<div class="product">
+
+
+
+	</div>
+</div>
+
+
+<div class="cart" id="hie"> 	<div class="payment" id="paym">
+		<h2>Select Payment Method</h2>
+		<div class="styl">
+		<a href="#paym" class="do" >Online Payment</a>
+		
+		<div class="pay" id="pay">
+		<button class="btnc" id="myBtno" onclick="online()">BUY &#10003</button> 
+		</div>
+
+		</div>
+		<div class="styl">
+		<a href="#paym" class="dopa">CashOn Delivery</a>
+		<div class="pay" id="pay">
+		<button class="btnc" id="myBtn" onclick="online()">BUY &#10003</button> 
+		</div>
+		</div>
+		
+		</div> 
+		<br>
+		</div>
+
+
+<!-- Trigger/Open The Modal -->
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="row11">
+			<div class="col-75">
+			<div class="container11">
+			<form action="/action_page.php">
+
+			<div class="row11">
+			<div class="col-50">
+			<h3>Delivery Address</h3>
+			<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your Name">
+			<label for="email"><i class="fa fa-envelope"></i> Email</label>
+			<input type="text" id="email" name="email" placeholder="mail@gmail.com">
+			<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+			<input type="text" id="adr" name="address" placeholder="YourAddress....">
+			<label for="city"><i class="fa fa-institution"></i> City</label>
+			<input type="text" id="city" name="city" placeholder="YourCity">
+
+			<div class="row11">
+			<div class="col-50">
+			<label for="state">State</label>
+			<input type="text" id="state" name="state" placeholder="State">
+			</div>
+			<div class="col-50">
+			<label for="zip">PIN</label>
+			<input type="text" id="zip" name="zip" placeholder="pincode">
+			</div>
+			</div>
+			</div>
+
+
+
+			</div>
+			
+			<div class="checkout">
+			<input type="button"  id="myBtn1" value="Continue to BUY" class="btnnc" onclick="and()" >
+			<div class="mony">
+
+			</div>
+
+			
+			</div>
+			
+
+				
+
+			</form>
+
+
+
+			</div>
+			</div>
+
+			</div>
+			</div>
+			</div>
+
+
+
+
+
+
+<div id="modal2" class="model2">
+<div class="modal-content">
+
+<span class="close2">&times;</span>
+<div class="row" >
+<div class="col-75">
+<div class="container">
+<form action="/action_page.php">
+
+<div class="row">
+<div class="col-50">
+<h3>Billing Address</h3>
+<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+<input type="text" id="fname" name="firstname" placeholder="Your Name">
+<label for="email"><i class="fa fa-envelope"></i> Email</label>
+<input type="text" id="email" name="email" placeholder="mail@gmail.com">
+<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+<input type="text" id="adr" name="address" placeholder="YourAddress....">
+<label for="city"><i class="fa fa-institution"></i> City</label>
+<input type="text" id="city" name="city" placeholder="YourCity">
+
+<div class="row">
+<div class="col-50">
+<label for="state">State</label>
+<input type="text" id="state" name="state" placeholder="state">
+</div>
+<div class="col-50">
+<label for="zip">PIN</label>
+<input type="text" id="zip" name="zip" placeholder="pincode">
+</div>
+</div>
+</div>
+
+<div class="col-50">
+<h3>Payment</h3>
+<label for="fname">Accepted Cards</label>
+<div class="icon-container">
+<i class="fa fa-cc-visa" style="color:navy;"></i>
+<i class="fa fa-cc-amex" style="color:blue;"></i>
+<i class="fa fa-cc-mastercard" style="color:red;"></i>
+<i class="fa fa-cc-discover" style="color:orange;"></i>
+</div>
+<label for="cname">Name on Card</label>
+<input type="text" id="cname" name="cardname" placeholder="NAME">
+<label for="ccnum">Credit card number</label>
+<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+<label for="expmonth">Exp Month</label>
+<input type="text" id="expmonth" name="expmonth" placeholder="July">
+<div class="row">
+<div class="col-50">
+<label for="expyear">Exp Year</label>
+<input type="text" id="expyear" name="expyear" placeholder="2021">
+</div>
+<div class="col-50">
+<label for="cvv">CVV</label>
+<input type="text" id="cvv" name="cvv" placeholder="***">
+</div>
+</div>
+</div>
+
+</div>
+<label>
+<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+</label>
+<div class="checkout">
+<input type="button"  id="myBtn1" value="Continue to BUY" class="btnnc" onclick="and()" >
+<div class="mony1">
+
+</div>
+
+</div>
+
+
+</form>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="myModal11" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+			<span class="class2" id="class2">&times;</span><center>
+			<p><h1><h1>ThankYou For Shopping</h1><br>
+			<div class="col-2aac">
+			<img src="images/logo.png" width="500px"  height="70px">
+			
+		    </div>
+				<a href="home.html" class="btn">HomePage &#8594</a></p>
+			
+			
+			</center>
+			</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----Footer----->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<img src="images/play.png" height="70px" width="100px">
+					<img src="images/app.png" height="70px" width="100px">
+				<h3>Download Our App</h3>
+				<p>Download App for android and ios</p> </div>
+				<div class="footer-col-2">
+					<h3>Follow us on</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul></div>
+					<div class="footer-col-3">
+						<img src="images/logo-white.png" width="130px" height="70px">
+						<p>Reliable
+All products displayed on 1mg are procured from verified and licensed pharmacies. </p>
+					</div>
+				</div>
+				<hr>
+			<p class="copyright">© 2021 . All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.
+			 </p>
+				</div>
+</div>
+<!--------js for toggle menu-------->
+<script>
+var MenuItems = document.getElementById("MenuItems");
+	
+	function menutoggle(){
+			 var x = document.getElementById("MenuItems");
+				if (x.style.display === 'none') {
+					x.style.display = 'block';
+				} else {
+					x.style.display = 'none';
+					}
+	}
+
+
+if(localStorage.length==0){
+var x = document.getElementById("hie");
+x.style.display='none';
+}
+
+
+function and(){
+	     
+
+var modal = document.getElementById("myModal11");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("class2")[0];
+
+// When the user clicks the button, open the modal 
+
+  modal.style.display = "block";
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+	
+	
+}
+let money= document.querySelector(".mony");
+let money1= document.querySelector(".mony1");
+
+let cartcost=localStorage.getItem("totalcost");
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+  money.innerHTML=`Rs ${cartcost}.00
+		
+		`;
+
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+	
+
+
+
+
+
+var modal2 = document.getElementById("modal2");
+
+// Get the button that opens the modal
+var btn2= document.getElementById("myBtno");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+   modal2.style.display = "block";
+  money1.innerHTML=`Rs ${cartcost}.00
+		
+		`;
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
+
+	
+
+</script>
+<script type="text/javascript" src="asd.js"> </script>
+</body>
+</html>

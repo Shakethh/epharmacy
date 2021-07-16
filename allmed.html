@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Medkart|online-pharmacy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/34119cb70f.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/34119cb70f.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8dd67f831c.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="header">
+    <div class="header2">
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/logo.png" width="130px">
+	</div>
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="allmed.html"><h1>Allmeds</h1></a></li>
+			<li><a href="covid.html">Covid-Care</a></li>
+			<!-- <li><a href="delivery.html">Delivery</a></li> -->
+			<li><a href="account.html">Account</a></li>
+		</ul>
+	</nav>
+    
+	<a href="cart.html"images/cart.png><img src="images/cart.png" width="30px" height="30px"><span>0</span></a>
+	<img src="images/menu.png" class="menu-icon" onclick="menutoggle()"> 
+	</div>
+    
+	<div class="row">
+		<div class="col-22">
+         <h1>All Meds</h1>
+			<h2>Find Your Prescription Medicines</h2> 
+      <div class="bar">
+			<input type="text" id="myInput"  class="keycol"onkeyup="myFunction()" placeholder="                                     &#128269;" >
+      </div>
+		</div>
+		<div class="col-22">
+			<img src="images/paramed.png">
+			
+		</div>
+	</div>
+    </div>
+
+</div></div>
+
+<div class="sticky">
+
+<a href="cart.html" images/cart.png><img src="images/cart.png" width="70px" height="70px"><span>0</span></a> 
+
+
+
+</div>
+<main id="maincontent" class="main-section "> 
+<div class="breadcrumbs"> </div> 
+  <div class="clearfix"></div> 
+      <div class="pres_title"> 
+      <div class="row3">
+       <div class="innercontent"> 
+            <span><h1>Shop by Drug Category</h1></span>
+        </div>
+           <div> <img src="images/search.png" class="menu-icon" onclick="hidem()"> 
+            </div> 
+            	
+      </div> 
+      </div> 
+  <div class="clearfix"></div> 
+  
+  <div class="prescriptions_products" id="list-nav"> 
+    <div id="hide">
+         <div class="row-1" id="myUL">
+            <div class="drug-list-col ln-a listNavShow" > 
+            <h3>A</h3>
+
+            <ul class="alpha-drug-list" > 
+            <li> <a href= "#med"> ADHD (5) </a></li> 
+            <li><a href= "#med"> Acne (354) </a></li>
+            <li> <a href= "#med"> Alcohol Addiction (12) </a> 
+            </li> <li> <a href= "#med"> Allergies (974) </a> 
+            </li> <li> <a href= "#med"> Alzheimer (148) </a> 
+            </li> <li> <a href= "#med"> Amoebiasis (20) </a> 
+            </li> <li> <a href= "#med"> Anaemia (473) </a> </li> 
+            <li> <a href= "#med"> Anaesthesia - Local (57) </a> 
+            </ul> 
+            </div> 
+            <div class="drug-list-col ln-b listNavHide"> 
+
+            <h3>B</h3> 
+            <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Bacterial Infections (244) </a> 
+            </li> <li> <a href= "#med"> Bladder And Prostate Disorders (306) </a> 
+            </li> <li> <a href= "#med"> Bleeding Disorders (144) </a> 
+            </li> <li> <a href= "#med"> Blood Clot (649) </a> 
+            </li> <li> <a href= "#med"> Bone Metabolism (107) </a> 
+            </li> <li> <a href= "#med"> Burns (2) </a> 
+            </li> </ul> 
+            </div> 
+            <div class="drug-list-col ln-c listNavHide"> 
+
+            <h3>C</h3> 
+            <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> CNS stimulants (1) </a> 
+            </li> <li> <a href= "#med"> Cancer/Oncology (1269) </a> 
+            </li> <li> <a href= "#med"> Cholelithiasis/Gall Stones (128) </a> 
+            </li> <li> <a href= "#med"> Cleanser (180) </a> 
+            </li> <li> <a href= "#med"> Constipation (283) </a> 
+            </li> <li> <a href= "#med"> Contraception (70) </a> 
+            </li> <li> <a href= "#med"> Cough And Cold (946) </a> 
+            </li> <li> <a href= "#med"> Crack (1) </a> 
+            </li> </ul> 
+            </div> 
+            <div class="drug-list-col ln-d listNavHide"> <h3>D</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Dandruff (69) </a> 
+            </li> <li> <a href= "#med"> Denture Adhesive (3) </a> 
+            </li> <li> <a href= "#med"> Depression (476) </a> 
+            </li> <li> <a href= "#med"> Diabetes (4159) </a> 
+            </li> <li> <a href= "#med"> Diagnostic (9) </a> 
+            </li> <li> <a href= "#med"> Diarrhoea (248) </a> 
+            </li> <li> <a href= "#med"> Dietary Management (1) </a> 
+            </ul> </div> <div class="drug-list-col ln-e listNavHide"> 
+            <h3>E</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Ear Conditions (52) </a> 
+            </li> <li> <a href= "#med"> Electrolytes (0) </a> </li> <li> <a href= "#med"> Epilepsy/Convulsion (910) </a> 
+            </li> <li> <a href= "#med"> Eye Infections (2) </a> </li> <li> <a href= "#med"> Eye conditions (428) </a> </li> </ul> </div> <div class="drug-list-col ln-f listNavHide"> <h3>F</h3> <ul class="alpha-drug-list"> <li> <a href= "#med"> Fever (369) </a> 
+            </li> <li> <a href= "#med"> Fungal (1326) </a> </li> <li> <a href= "#med"> Fungal Infections (8) </a> </li> </ul> </div> <div class="drug-list-col ln-g listNavHide"> <h3>G</h3> <ul class="alpha-drug-list"> <li> <a href= "#med"> Gastro Intestinal Motility Disorders (82) </a> 
+            </li> <li> <a href= "#med"> General-P (31) </a> </li> <li> <a href= "#med"> Glaucoma (159) </a> </li> <li> <a href= "#med"> Gout (128) </a> </li> </ul> </div> <div class="drug-list-col ln-h listNavHide"> <h3>H</h3> <ul class="alpha-drug-list"> <li> <a href= "#med"> Haematopoiesis (139) </a> 
+            </li> <li> <a href= "#med"> Haemorrhoid (52) </a> </li> <li> <a href= "#med"> Hair Color (8) </a> </li> <li> <a href= "#med"> Hair Loss (221) </a> </li> <li> <a href= "#med"> Head Lice (2) </a> </li> <li> <a href= "#med"> Heart Failure (47) </a> 
+            </li> <li> <a href= "#med"> Hepatitis B Infection (10) </a> </li> <li> <a href= "#med"> High Cholesterol (1614) </a> </li></ul> </div> <div class="drug-list-col ln-i listNavHide"> <h3>I</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Iron Supplement/Anaemia (0) </a> 
+            </li> <li> <a href= "#med"> Itching/Dry Skin (0) </a> </li> </ul> </div> <div class="drug-list-col ln-k listNavHide"> <h3>K</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Kidney Disease/Stones (104) </a> 
+            </li> </ul> </div> <div class="drug-list-col ln-l listNavHide"> <h3>L</h3> <ul class="alpha-drug-list">
+            <li> <a href= "#med"> Leprosy (3) </a> </li> <li> <a href= "#med"> Liver Diseases (105) </a> 
+            </li> <li> <a href= "#med"> Liver Supplement (0) </a> 
+            </li> <li> <a href= "#med"> Lubrication (3) </a> 
+            </li> </ul> </div> <div class="drug-list-col ln-m listNavHide"> <h3>M</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Malarial (191) </a> 
+            </li> <li> <a href= "#med"> Melasma (3) </a> 
+            </li> <li> <a href= "#med"> Migraine (148) </a> 
+            </li> <li> <a href= "#med"> Muscle Cramps/Spasticity (321) </a> 
+            </li> <li> <a href= "#med"> Muscle Spasm (258) </a> 
+            </li> <li> <a href= "#med"> Myasthenia Gravis (4) </a> 
+            </li> <li> <a href= "#med"> Mydriasis (35) </a> 
+            </li> </ul> </div> <div class="drug-list-col ln-n listNavHide"> <h3>N</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Nappy Rash (3) </a> 
+            </li> <li> <a href= "#med"> Nasal Congestion (184) </a>
+            </li> <li> <a href= "#med"> Neuropathic Pain (657) </a> 
+            </li> <li> <a href= "#med"> Nootropics And Neurotrophics (240) </a> </li> </ul> </div> <div class="drug-list-col ln-o listNavHide"> <h3>O</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Obese (3) </a> 
+            </li> <li> <a href= "#med"> Obesity (1) </a> 
+            </li> <li> <a href= "#med"> Oral Care (239) </a> 
+            </li> <li> <a href= "#med"> Osteoporosis (82) </a> 
+            </li> </ul> </div> <div class="drug-list-col ln-p listNavHide"> <h3>P</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Pain relief (2142) </a> 
+            </li> <li> <a href= "#med"> Parasitic Worms (174) </a> 
+            </li> <li> <a href= "#med"> Parkinsonism (140) </a> 
+            </li> <li> <a href= "#med"> Patanjali Ayurvedic (2) </a> 
+            </li> <li> <a href= "#med"> Pen (Device) (0) </a> 
+            </li> <li> <a href= "#med"> Peripheral Hypertension (17) </a> 
+            </li> <li> <a href= "#med"> Peripheral Vascular Disease (0) </a> 
+            </li> <li> <a href= "#med"> Poisoning/Overdose (52) </a> 
+            </li> </ul> </div> <div class="drug-list-col ln-r listNavHide"> <h3>R</h3> <ul class="alpha-drug-list"> <li> <a href= "#med"> Rabies (7) </a> </li> </ul> </div> <div class="drug-list-col ln-s listNavHide"> <h3>S</h3> <ul class="alpha-drug-list"> <li> <a href= "#med"> Sanitizer (23) </a> </li> <li> <a href= "#med"> Scabies (48) </a> </li> <li> <a href= "#med"> Scar (6) </a> 
+            </li> <li> <a href= "#med"> Schizophrenia (353) </a> 
+            </li> <li> <a href= "#med"> Skin Infections (713) </a> 
+            </li> <li> <a href= "#med"> Smoking cessation (14) </a> 
+            </li> <li> <a href= "#med"> Stretch Marks (11) </a> 
+            </li> <li> <a href= "#med"> Sun Protectors (12) </a> 
+            </ul> </div> <div class="drug-list-col ln-t listNavHide"> <h3>T</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Tetanus (3) </a> 
+            </li> <li> <a href= "#med"> Thrombotic Disorder (131) </a> 
+            </li> <li> <a href= "#med"> Tuberculosis (Tb) (0) </a> 
+            </li> </ul> </div> <div class="drug-list-col ln-u listNavHide"> <h3>U</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Ulcer/Reflux/Flatulence (1952) </a> 
+            </li> <li> <a href= "#med"> Ulcerative Colitis/Bowel Inflammatory Disease (106) </a> 
+            </li> <li> <a href= "#med"> Urinary Retention (98) </a> 
+            </li> <li> <a href= "#med"> Uterus Conditions (61) </a> 
+            </li> <li> <a href= "#med"> Uti Infections (1) </a> 
+            </li> </ul> </div> <div class="drug-list-col ln-v listNavHide"> <h3>V</h3> <ul class="alpha-drug-list"> 
+            <li> <a href= "#med"> Vaccines (108) </a> 
+            </li> <li> <a href= "#med"> Vertigo (145) </a> 
+            </li> <li> <a href= "#med"> Viral infections (309) </a> 
+            </li> <li> <a href= "#med"> Vitamin B12 (0) </a> 
+            </li> <li> <a href= "#med"> Vitamin C/Supplements (1) </a> 
+            </li> <li> <a href= "#med"> Vitamin D3 (0) </a> 
+            </li> <li> <a href= "#med"> Vitamin E (0) </a> 
+            </li> <li> <a href= "#med"> Vomitting/Emesis (312) </a> </li> </ul> </div> 
+            <div class="drug-list-col ln-w listNavHide"> <h3>W</h3> 
+            <ul class="alpha-drug-list"> <li>
+            <a href= "#med"> Warts/Calluses/Other Skin Lesion (25) </a> 
+            </li> <li> <a href= "#med"> Weight Loss (28) </a> 
+            </li> <li> <a href= "#med"> Wound Care (117) </a> 
+            </li> <li> <a href= "#med"> Wrinkle/Anti Ageing (8) </a> 
+            </li>
+            </ul>
+            </div> 
+        </div>
+         </div>  
+      </div>
+
+   </main>
+   
+    <div class="small small-container" id="med">
+    <h2 class="title">MEDICINS</h2>
+
+    <div class="row" >
+          <div class="col-61" >
+            <img src="images/amoxi.png">
+            <h4>Amoxycillin </h4>
+           <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Rs.149 <a  class="add-cart cart1" >Cart &#10011</a></p>
+        </div>
+        <div class="col-61">
+            <img src="images/ben.png">
+            <h4>Benzoyl Peroxide</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.66  <a class="add-cart cart2"  >Cart &#10011</a></p>
+            </div>
+        <div class="col-61">
+            <img src="images/clop.png">
+            <h4>Clopidogrel</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.77  <a  class="add-cart cart3">Cart &#10011</a></p>
+        </div>
+        <div class="col-61">
+            <img src="images/doxo.png">
+            <h4>Doxofylline Tablets</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i ass="fa fa-star-half-o"></i>
+            </div>
+            <p>Rs.77  <a  class="add-cart cart4">Cart &#10011</a></p>
+        </div>
+        <div class="col-61">
+        <img src="images/faro.png">
+        <h4>Farobact 200</h4>
+        <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>RS.444  <a  class="add-cart cart5">Cart &#10011</a></p>
+        </div>
+        <div class="col-61">
+        <img src="images/mini.png">
+        <h4>Minoxidil Topical Solution</h4>
+        <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>Rs.819  <a  class="add-cart cart6">Cart &#10011</a></p>
+        </div>
+       
+        <div class="col-61">
+        <img src="images/nexto.png">
+        <h4>Escitalopram Tablets</h4>
+        <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>Rs.39  <a  class="add-cart cart7">Cart &#10011</a></p>
+        </div>
+
+         <div class="col-61">
+        <img src="images/ostat.png">
+        <h4>O-stat 120</h4>
+        <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Rs.333  <a  class="add-cart cart8">Cart &#10011</a></p>
+        </div>
+
+        <div class="col-61">
+        <img src="images/para.png">
+        <h4>Paracetamol Tablets</h4>
+        <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>Rs.22  <a  class="add-cart cart9">Cart &#10011</a></p>
+        </div>
+        <div class="col-61">
+        <img src="images/illw.png">
+        <h4>Willgo</h4>
+        <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>Rs.50  <a  class="add-cart cart10">Cart &#10011</a></p>
+        </div>
+        <div class="col-61">
+        <img src="images/sompr.png">
+        <h4>Sompraz</h4>
+        <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>Rs.199  <a  class="add-cart cart11">Cart &#10011</a></p>
+        </div>
+        
+        <div class="col-61">
+        <img src="images/tbact.png">
+        <h4>T-bact ointment</h4>
+        <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.100  <a  class="add-cart cart12">Cart &#10011</a></p>
+        </div>
+
+
+    </div>
+</div>
+       
+<!-----Footer----->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<img src="images/play.png" height="70px" width="100px">
+					<img src="images/app.png" height="70px" width="100px">
+				<h3>Download Our App</h3>
+				<p>Download App for android and ios</p> </div>
+				<div class="footer-col-2">
+					<h3>Follow us on</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul></div>
+					<div class="footer-col-3">
+						<img src="images/logo-white.png" width="130px" height="70px">
+						<p>Reliable
+All products displayed on 1mg are procured from verified and licensed pharmacies. </p>
+					</div>
+				</div>
+				<hr>
+			<p class="copyright">© 2021 . All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.
+			 </p>
+				</div>
+</div>
+<!--------js for toggle menu-------->
+<script>
+	
+
+	var MenuItems = document.getElementById("MenuItems");
+	
+	function menutoggle(){
+			 var x = document.getElementById("MenuItems");
+				if (x.style.display === 'none') {
+					x.style.display = 'block';
+				} else {
+					x.style.display = 'none';
+					}
+	}
+ var mad=document.getElementById("hide");
+ mad.style.display="none";
+
+function hidem(){
+			 var x = document.getElementById("hide");
+				if (x.style.display === 'none') {
+					x.style.display = 'block';
+				} else {
+					x.style.display = 'none';
+					}
+	}
+
+
+	
+
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+</script>
+<script type="text/javascript" src="asd.js"></script>
+<script type="text/javascript" src="asdhome.js"></script>
+<script type="text/javascript" src="asdcovid.js"></script>
+<script type="text/javascript" src="asdmed.js"></script>
+
+
+
+</body>
